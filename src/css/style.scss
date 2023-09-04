@@ -1,5 +1,5 @@
-@import "../scss/_media";
-@import "../scss/_reset";
+@import "../scss/_media.scss";
+@import "../scss/_reset.scss";
 
 .top-header {
   display: flex;
@@ -178,7 +178,6 @@
 }
 
 #header-phone {
-  display: none;
   .phone-container {
     background-color: #f6f7f8;
     padding: 3% 3%;
@@ -192,6 +191,10 @@
         align-items: center;
         a {
           color: #666666;
+        }
+        .search,
+        .language {
+          margin-right: 20px;
         }
       }
     }
