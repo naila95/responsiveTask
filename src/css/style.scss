@@ -1,0 +1,205 @@
+@import "../scss/_media";
+@import "../scss/_reset";
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f6f7f8;
+  padding: 1.5% 3%;
+  .top-left-nav a {
+    color: #666666;
+    font-size: 14px;
+    margin-right: 1.5rem;
+  }
+  .button {
+    border: 1.5px solid #0056c1;
+    border-radius: 40px;
+    color: #0056c1 !important;
+    font-weight: 500;
+    padding: 6px 12px;
+  }
+  .top-right-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      color: #666666;
+      font-size: 14px;
+      margin-right: 1.5rem;
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+  .top-left-nav a:hover {
+    text-decoration: underline;
+  }
+  .top-left-nav .button:hover {
+    background-color: #0056c1;
+    color: white !important;
+    text-decoration: none;
+  }
+}
+
+.middle-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .middle-left-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .middle-left-nav .individual {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .item1 a {
+      color: #262626;
+      font-size: 17px;
+    }
+    .item1 a::after {
+      content: "/";
+      font-size: 17px;
+      color: #262626;
+      padding: 0 20px;
+      font-weight: 500;
+    }
+    .item2 a::after {
+      content: "/";
+      font-size: 17px;
+      color: #666666;
+      padding: 0 20px;
+      font-weight: 500;
+    }
+    .item2 a:hover,
+    .item3 a:hover {
+      color: #262626;
+    }
+    .item2 a,
+    .item3 a {
+      color: #666666;
+      font-size: 17px;
+    }
+  }
+  .middle-right-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    .banking a {
+      font-size: 17px;
+      color: #0056c1;
+      font-weight: 600;
+      margin-right: 20px;
+    }
+  }
+}
+
+.bottom-header {
+  display: flex;
+  text-align: center;
+  justify-content: left;
+  .company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      margin-right: 20px;
+      font-size: 17px;
+      color: #17253a;
+    }
+    .bottom-item1,
+    .bottom-item2,
+    .bottom-item3,
+    .bottom-item4,
+    .bottom-item5,
+    .bottom-item6,
+    .bottom-item7,
+    .bottom-item8,
+    .bottom-item9,
+    .bottom-item10 {
+      position: relative;
+    }
+
+    .bottom-item1::after,
+    .bottom-item2::after,
+    .bottom-item3::after,
+    .bottom-item4::after,
+    .bottom-item5::after,
+    .bottom-item6::after,
+    .bottom-item7::after,
+    .bottom-item8::after,
+    .bottom-item9::after,
+    .bottom-item10::after {
+      content: "";
+      height: 3px;
+      bottom: -30px;
+      left: 0;
+      background-color: #007aff;
+      position: absolute;
+      width: 0px;
+      transition: 0.5s;
+    }
+
+    .bottom-item1:hover::after {
+      width: 60px;
+    }
+    .bottom-item2:hover::after {
+      width: 50px;
+    }
+    .bottom-item3:hover::after {
+      width: 70px;
+    }
+    .bottom-item4:hover::after {
+      width: 47px;
+    }
+    .bottom-item5:hover::after {
+      width: 110px;
+    }
+    .bottom-item6:hover::after {
+      width: 72px;
+    }
+    .bottom-item7:hover::after {
+      width: 128px;
+    }
+    .bottom-item8:hover::after {
+      width: 72px;
+    }
+    .bottom-item9:hover::after {
+      width: 52px;
+    }
+    .bottom-item10:hover::after {
+      width: 98px;
+    }
+  }
+}
+
+#header-phone {
+  display: none;
+  .phone-container {
+    background-color: #f6f7f8;
+    padding: 3% 3%;
+    .phone-top-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .phone-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+          color: #666666;
+        }
+      }
+    }
+  }
+  .phone-bottom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 3%;
+  }
+}
